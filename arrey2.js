@@ -10,9 +10,16 @@ let media = somma / numbers.length;
 console.log(media);
 
   
-let numbers2 = numbers.filter(  (number) => number < media  );
+let minori = numbers.filter(  (number) => number < media  );
 
-console.log(numbers2);
+console.log(minori);
 
 
 
+let maggiori = numbers.filter((number) => number > media );
+
+console.log(maggiori);
+
+console.log(`i numeri minori della media sono ${minori.length}`);
+console.log(`I numeri maggiori della media sono  ${maggiori.length}`);
+    
